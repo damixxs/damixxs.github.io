@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  line-height: 1.6;
+}
+
+a {
+  color: #58a6ff;
+}
+
+/* ---------- PÁGINA DE INICIO ---------- */
+body.inicio {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #0d1117, #12301f);
+}
+
+.bienvenida {
+  max-width: 650px;
+}
+
+
+.saludo {
+  font-size: 1.2rem;
+  color: #3fb950;
+  margin-bottom: 10px;
+}
+
+.bienvenida h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.descripcion {
+  font-size: 1.1rem;
+  color: #c9d1d9;
+  margin-bottom: 30px;
+}
+
+.boton {
+  display: inline-block;
+  background: #238636;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.boton:hover {
+  background: #2ea043;
+  transform: scale(1.05);
+
+}
+
+.redes {
+  margin-top: 25px;
+}
+
+/* ---------- PORTAFOLIO ---------- */
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #238636, #1f6feb);
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+.volver {
+  display: inline-block;
+  margin-top: 15px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+
+.volver:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+main {
+
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+section {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 12px;
+  color: #58a6ff;
+}
+
+.etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.etiquetas span {
+  background: #238636;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.tarjetas {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+.tarjeta {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.tarjeta h3 {
+  margin-bottom: 8px;
+}
+
+.tarjeta p {
+  margin-bottom: 10px;
+  color: #8b949e;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #8b949e;
+}
