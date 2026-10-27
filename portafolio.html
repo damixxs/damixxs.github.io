@@ -3,55 +3,252 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Damian Bastidas - Ingeniería en Software, Universidad Técnica de Ambato.">
   <title>Portafolio | Damian Bastidas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Mi Portafolio</h1>
-    <p>Damian Bastidas | Estudiante de desarrollo web</p>
-    <a href="index.html" class="volver">← Volver al inicio</a>
+  <!-- ========== MENÚ ========== -->
+  <nav class="navbar">
+    <a href="#inicio" class="logo">DB<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#educacion">Educación</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#pasiones">Pasiones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="index.html" class="menu-inicio">Inicio</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== PRINCIPAL ========== -->
+  <header class="hero" id="inicio">
+    <div class="hero-contenido">
+      <div class="avatar">DB</div>
+
+      <p class="saludo">Hola, soy</p>
+      <h1>Damian <span class="resaltado">Bastidas</span></h1>
+      <p class="rol">Programador · Estudiante de Ingeniería en Software</p>
+      <p class="hero-texto">
+        Construyo mis primeros proyectos web con HTML, CSS y Git, con las ganas de
+        convertirme en un desarrollador profesional.
+      </p>
+      <div class="botones">
+        <a href="#proyectos" class="boton">Ver proyectos</a>
+        <a href="#contacto" class="boton-borde">Contáctame</a>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Habilidades</h2>
-      <div class="etiquetas">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Git</span>
-        <span>GitHub</span>
-        <span>JavaScript (aprendiendo)</span>
+  <!-- ========== SOBRE MÍ ========== -->
+  <section id="sobre-mi" class="seccion reveal">
+    <h2 class="titulo">Sobre <span>mí</span></h2>
+    <div class="sobre-grid">
+      <div class="sobre-texto">
+        <p>
+          Soy Damian Bastidas, tengo 20 años y soy de Ecuador. Actualmente cursó el
+          <strong>cuarto semestre de Ingeniería en Software</strong> en la
+          <strong>Universidad Técnica de Ambato</strong>.
+        </p>
+        <p>
+          Me apasiona la programación porque me permite crear cosas desde cero y
+          resolver problemas. Disfruto aprender algo nuevo cada día y me gusta
+          <strong>ayudar a todos mis compañeros</strong> cuando lo necesitan.
+        </p>
+        <p>
+          Lo que más me motiva es mi <strong>familia</strong>: todo lo que hago es
+          para salir adelante y hacerlos sentir orgullosos.
+
+        </p>
       </div>
-    </section>
+      <div class="datos">
+        <div class="dato"><span>📍</span><div><small>Ubicación</small><p>Ecuador</p></div></div>
+        <div class="dato"><span>🎂</span><div><small>Edad</small><p>20 años</p></div></div>
+        <div class="dato"><span>🎓</span><div><small>Estudios</small><p>Ingeniería en Software</p></div></div>
+        <div class="dato"><span>🗣️</span><div><small>Idiomas</small><p>Español · Inglés A2 (en curso)</p></div></div>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h2>Mis proyectos</h2>
-      <div class="tarjetas">
-        <div class="tarjeta">
-          <h3>PROYECTO_GRUPO4</h3>
-          <p>Proyecto grupal desarrollado en HTML.</p>
-          <a href="https://github.com/damixxs/PROYECTO_GRUPO4" target="_blank">Ver en GitHub</a>
-        </div>
-        <div class="tarjeta">
-          <h3>comandos_basicos_b</h3>
-          <p>Guía de comandos básicos de Git.</p>
-          <a href="https://github.com/damixxs/comandos_basicos_b" target="_blank">Ver en GitHub</a>
+  <!-- ========== EDUCACIÓN ========== -->
+  <section id="educacion" class="seccion reveal">
+    <h2 class="titulo">Educa<span>ción</span></h2>
+    <div class="linea-tiempo">
+      <div class="hito">
+        <div class="punto"></div>
+        <div class="hito-card">
+          <small>Actualidad</small>
+          <h3>Ingeniería en Software</h3>
+          <p>Universidad Técnica de Ambato · Cuarto semestre</p>
         </div>
       </div>
-    </section>
+      <div class="hito">
+        <div class="punto"></div>
+        <div class="hito-card">
+          <small>En curso</small>
+          <h3>Curso de Inglés · Nivel A2</h3>
+          <p>Mejorando mi inglés para el mundo de la tecnología.</p>
+        </div>
+      </div>
+    </div>
 
-    <section>
-      <h2>Contacto</h2>
-      <p>📧 tuemail@ejemplo.com</p>
-      <p><a href="https://github.com/damixxs" target="_blank">GitHub: damixxs</a></p>
-    </section>
-  </main>
+  </section>
 
+  <!-- ========== HABILIDADES ========== -->
+  <section id="habilidades" class="seccion reveal">
+    <h2 class="titulo">Habili<span>dades</span></h2>
+
+    <div class="habilidades-grid">
+      <div class="barras">
+        <h3>Técnicas</h3>
+
+        <div class="barra">
+          <div class="barra-info"><span>HTML</span><span>70%</span></div>
+          <div class="barra-fondo"><div class="barra-relleno" style="--nivel: 70%"></div></div>
+        </div>
+        <div class="barra">
+          <div class="barra-info"><span>CSS</span><span>65%</span></div>
+          <div class="barra-fondo"><div class="barra-relleno" style="--nivel: 65%"></div></div>
+        </div>
+        <div class="barra">
+          <div class="barra-info"><span>Git</span><span>60%</span></div>
+          <div class="barra-fondo"><div class="barra-relleno" style="--nivel: 60%"></div></div>
+        </div>
+        <div class="barra">
+          <div class="barra-info"><span>GitHub</span><span>60%</span></div>
+          <div class="barra-fondo"><div class="barra-relleno" style="--nivel: 60%"></div></div>
+        </div>
+        <div class="barra">
+          <div class="barra-info"><span>JavaScript (aprendiendo)</span><span>30%</span></div>
+          <div class="barra-fondo"><div class="barra-relleno" style="--nivel: 30%"></div></div>
+        </div>
+      </div>
+
+
+      <div class="blandas">
+        <h3>Personales</h3>
+        <div class="etiquetas">
+          <span>🤝 Trabajo en equipo</span>
+          <span>🙌 Ayudar a los demás</span>
+          <span>📚 Ganas de aprender</span>
+          <span>💪 Responsabilidad</span>
+          <span>🧠 Resolución de problemas</span>
+        </div>
+
+        <h3 class="mt">Idiomas</h3>
+        <div class="etiquetas">
+          <span>🇪🇨 Español · Nativo</span>
+          <span>🇬🇧 Inglés · A2 (en curso)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROYECTOS ========== -->
+  <section id="proyectos" class="seccion reveal">
+    <h2 class="titulo">Mis <span>proyectos</span></h2>
+
+    <div class="tarjetas">
+      <article class="tarjeta">
+        <div class="tarjeta-icono">👥</div>
+        <h3>PROYECTO_GRUPO4</h3>
+        <p>Proyecto grupal desarrollado en HTML, donde aprendí a trabajar en equipo usando Git y GitHub.</p>
+        <div class="etiquetas chicas"><span>HTML</span><span>Git</span><span>Grupal</span></div>
+        <a href="https://github.com/damixxs/PROYECTO_GRUPO4" target="_blank" rel="noopener">Ver en GitHub →</a>
+      </article>
+
+
+      <article class="tarjeta">
+        <div class="tarjeta-icono">📘</div>
+        <h3>comandos_basicos_b</h3>
+        <p>Guía con los comandos básicos de Git que uso a diario para controlar versiones.</p>
+        <div class="etiquetas chicas"><span>HTML</span><span>Git</span><span>Guía</span></div>
+        <a href="https://github.com/damixxs/comandos_basicos_b" target="_blank" rel="noopener">Ver en GitHub →</a>
+      </article>
+
+      <article class="tarjeta">
+        <div class="tarjeta-icono">🌐</div>
+        <h3>Mi portafolio web</h3>
+        <p>Esta misma página, creada desde cero y publicada gratis con GitHub Pages.</p>
+        <div class="etiquetas chicas"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <a href="https://github.com/damixxs/damixxs.github.io" target="_blank" rel="noopener">Ver en GitHub →</a>
+      </article>
+
+      <article class="tarjeta proximamente">
+        <div class="tarjeta-icono">🚀</div>
+        <h3>Próximamente</h3>
+        <p>Estoy preparando nuevos proyectos con JavaScript. ¡Vuelve pronto!</p>
+        <div class="etiquetas chicas"><span>JavaScript</span><span>En desarrollo</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== PASIONES ========== -->
+  <section id="pasiones" class="seccion reveal">
+    <h2 class="titulo">Fuera del <span>código</span></h2>
+
+    <div class="pasiones-grid">
+      <div class="pasion destacada">
+        <div class="pasion-icono">⚽</div>
+
+        <h3>Fútbol</h3>
+        <p>Hincha de <strong>Barcelona Sporting Club</strong> 💛🖤 y admirador de <strong>Cristiano Ronaldo</strong>, por su disciplina y su mentalidad ganadora.</p>
+      </div>
+      <div class="pasion">
+        <div class="pasion-icono">🎵</div>
+        <h3>Música</h3>
+        <p>La música me acompaña cuando estudio y cuando programo.</p>
+      </div>
+      <div class="pasion">
+        <div class="pasion-icono">🥾</div>
+        <h3>Caminatas</h3>
+        <p>Caminar me ayuda a despejar la mente y a recargar energía.</p>
+      </div>
+      <div class="pasion">
+        <div class="pasion-icono">👨‍👩‍👧‍👦</div>
+        <h3>Familia</h3>
+        <p>Mi mayor motivación para seguir adelante cada día.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section id="contacto" class="seccion reveal">
+    <h2 class="titulo">Conta<span>cto</span></h2>
+    <p class="contacto-texto">¿Tienes una idea, una consulta o quieres trabajar conmigo? ¡Escríbeme!</p>
+
+    <div class="contacto-grid">
+      <a href="mailto:abastidas1342@uta.edu.ec" class="contacto-card">
+        <span>📧</span>
+        <div><small>Correo</small><p>abastidas1342@uta.edu.ec</p></div>
+      </a>
+      <a href="https://wa.me/593961595885" target="_blank" rel="noopener" class="contacto-card">
+
+        <span>💬</span>
+        <div><small>WhatsApp</small><p>096 159 5885</p></div>
+      </a>
+      <a href="https://instagram.com/damianb_0920" target="_blank" rel="noopener" class="contacto-card">
+        <span>📸</span>
+        <div><small>Instagram</small><p>@damianb_0920</p></div>
+      </a>
+      <a href="https://github.com/damixxs" target="_blank" rel="noopener" class="contacto-card">
+        <span>💻</span>
+        <div><small>GitHub</small><p>damixxs</p></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== PIE ========== -->
   <footer>
-    <p>© 2026 Damian Bastidas</p>
+    <p>© <span id="anio">2026</span> Damian Bastidas · Hecho con 💛 desde Ecuador</p>
+    <a href="#inicio" class="subir">↑ Volver arriba</a>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
